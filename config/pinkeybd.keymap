@@ -27,10 +27,10 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W             &kp E      &kp R         &kp T       &mt LCTRL ESC   &kp Y      &kp U              &kp I      &kp O       &kp P
-&kp A  &kp S             &kp D      &kp F         &kp G       &kp SCROLLLOCK  &kp H      &kp J              &kp K      &kp L       &kp SEMICOLON
-&kp Z  &kp X             &kp C      &kp V         &kp B       &kp LEFT_ALT    &kp N      &kp M              &kp COMMA  &kp PERIOD  &kp SLASH
-&mo 3  &lt 1 LANGUAGE_5  &kp SPACE  &kp LEFT_WIN  &kp DELETE  &kp BACKSPACE   &kp ENTER  &mt RIGHT_ALT TAB  &mo 2
+&kp Q           &kp W            &kp E      &kp R         &kp T       &mt LCTRL ESC      &kp Y      &kp U          &kp I      &kp O       &kp P
+&kp A           &kp S            &kp D      &kp F         &kp G       &kp SCROLLLOCK     &kp H      &kp J          &kp K      &kp L       &kp SEMICOLON
+&kp Z           &kp X            &kp C      &kp V         &kp B       &kp LEFT_ALT       &kp N      &kp M          &kp COMMA  &kp PERIOD  &kp SLASH
+&kp LEFT_SHIFT  &lt 1 LC(SPACE)  &kp SPACE  &kp LEFT_WIN  &kp DELETE  &mt RIGHT_ALT TAB  &kp ENTER  &kp BACKSPACE  &mo 2
             >;
 
             sensor-bindings = <&rot_kp PG_DN PG_UP>;
@@ -46,8 +46,8 @@
         Lower_layer {
             bindings = <
 &kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)  &kp PAUSE_BREAK  &kp LC(Y)  &kp LC(U)       &kp LC(I)      &kp LC(O)       &kp LC(P)
-&kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)  &kp SCROLLLOCK   &kp LC(H)  &kp LC(J)       &kp LC(K)      &kp LC(L)       &kp DEL
-&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &kp TAB          &kp LC(N)  &kp LC(M)       &kp LC(COMMA)  &kp LC(PERIOD)  &kp INS
+&kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)  &kp SCROLLLOCK   &kp LC(H)  &kp LC(J)       &kp LC(K)      &kp LC(L)       &kp MINUS
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &kp TAB          &kp LC(N)  &kp LC(M)       &kp LC(COMMA)  &kp LC(PERIOD)  &kp SQT
 &mo 3      &none      &kp SPACE  &kp LALT   &kp PSCRN  &kp RSHIFT       &kp ENTER  &lt 4 NUMBER_0  &kp RCTRL
             >;
         };
@@ -80,7 +80,7 @@
 &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp ESC     &kp LEFT_PARENTHESIS  &kp N7        &kp N8        &kp N9        &kp RIGHT_PARENTHESIS
 &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)  &none       &kp SLASH             &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK
 &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &kp TAB     &kp PLUS              &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL
-&none       &none       &kp SPACE   &kp LSHIFT  &kp F11     &kp RSHIFT  &kp ENTER             &kp NUMBER_0  &kp RSHIFT
+&none       &none       &kp SPACE   &kp LSHIFT  &kp MINUS   &kp RSHIFT  &kp ENTER             &kp NUMBER_0  &kp RSHIFT
             >;
         };
 
