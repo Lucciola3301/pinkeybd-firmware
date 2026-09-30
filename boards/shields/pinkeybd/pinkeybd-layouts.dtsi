@@ -7,6 +7,17 @@
         kscan = <&kscan0>;
         transform = <&default_transform>;
 
+        /*
+         * Keep these key coordinates in exactly the same order as the
+         * keymap bindings.  Pinkeybd's logical order is:
+         *   11 keys / 11 keys / 11 keys / 9 keys.
+         *
+         * The physical PCB has an extra inner-right key on the third row
+         * (Delete in the current keymap), so its coordinate must stay in
+         * binding position 37 rather than being listed in simple geometric
+         * left-to-right order.  ZMK Studio pairs these entries directly with
+         * keymap binding positions.
+         */
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0   95       0     0     0>
             , <&key_physical_attrs 100 100  100   32       0     0     0>
@@ -19,6 +30,7 @@
             , <&key_physical_attrs 100 100 1000    0       0     0     0>
             , <&key_physical_attrs 100 100 1100   32       0     0     0>
             , <&key_physical_attrs 100 100 1200   95       0     0     0>
+
             , <&key_physical_attrs 100 100    0  195       0     0     0>
             , <&key_physical_attrs 100 100  100  132       0     0     0>
             , <&key_physical_attrs 100 100  200  100       0     0     0>
@@ -30,22 +42,24 @@
             , <&key_physical_attrs 100 100 1000  100       0     0     0>
             , <&key_physical_attrs 100 100 1100  132       0     0     0>
             , <&key_physical_attrs 100 100 1200  195       0     0     0>
+
             , <&key_physical_attrs 100 100    0  295       0     0     0>
             , <&key_physical_attrs 100 100  100  232       0     0     0>
             , <&key_physical_attrs 100 100  200  200       0     0     0>
             , <&key_physical_attrs 100 100  300  229       0     0     0>
             , <&key_physical_attrs 100 100  400  242       0     0     0>
             , <&key_physical_attrs 100 100  500  260       0     0     0>
-            , <&key_physical_attrs 100 100  700  260       0     0     0>
             , <&key_physical_attrs 100 100  800  242       0     0     0>
             , <&key_physical_attrs 100 100  900  229       0     0     0>
             , <&key_physical_attrs 100 100 1000  200       0     0     0>
             , <&key_physical_attrs 100 100 1100  232       0     0     0>
             , <&key_physical_attrs 100 100 1200  295       0     0     0>
+
             , <&key_physical_attrs 100 100    0  395       0     0     0>
             , <&key_physical_attrs 100 100  330  355    1500   430   455>
             , <&key_physical_attrs 100 100  430  355    3000   430   455>
             , <&key_physical_attrs 100 100  530  335    4500   430   455>
+            , <&key_physical_attrs 100 100  700  260       0     0     0>
             , <&key_physical_attrs 100 100  700  335 (-4500)   870   455>
             , <&key_physical_attrs 100 100  800  355 (-3000)   870   455>
             , <&key_physical_attrs 100 100  900  355 (-1500)   870   455>
