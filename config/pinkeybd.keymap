@@ -63,7 +63,7 @@
         Lower2_layer {
             bindings = <
 &kp EXCLAMATION  &kp AT_SIGN    &kp HASH      &kp DOLLAR            &kp PERCENT            &kp ESC     &kp L      &kp R     &kp PG_UP  &kp LBKT   &kp RBRC
-&kp LCTRL        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none       &kp BSPC   &kp HOME  &kp UP     &kp END    &kp DEL
+&kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none       &kp BSPC   &kp HOME  &kp UP     &kp END    &kp DEL
 &kp LC(Z)        &kp LC(X)      &kp LC(C)     &kp LC(V)             &kp Q                  &kp TAB     &kp APOS   &kp LEFT  &kp DOWN   &kp RIGHT  &kp INS
 &kp LSHIFT       &mo 5          &kp SPACE     &kp LALT              &kp PSCRN              &kp RSHIFT  &kp ENTER  &mo 4     &none
             >;
