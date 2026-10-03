@@ -119,10 +119,10 @@
 
         layer_6 {
             bindings = <
-&trans  &trans  &trans     &msc SCRL_DOWN  &msc SCRL_UP    &trans     &trans        &trans  &trans  &trans  &trans
-&trans  &trans  &mkp RCLK  &mkp MCLK       &mkp LCLK       &trans     &trans        &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &mkp MB5        &mkp MB4        &trans     &msc SCRL_UP  &trans  &trans  &trans  &trans
-&trans  &trans  &mkp LCLK  &trans          &msc SCRL_DOWN  &mkp LCLK  &trans        &trans  &trans
+&trans  &trans     &msc SCRL_DOWN  &msc SCRL_UP  &none           &trans     &trans        &trans  &trans  &trans  &trans
+&trans  &mkp RCLK  &mkp MCLK       &mkp LCLK     &none           &trans     &trans        &trans  &trans  &trans  &trans
+&trans  &trans     &mkp MB5        &mkp MB4      &none           &trans     &msc SCRL_UP  &trans  &trans  &trans  &trans
+&trans  &trans     &mkp LCLK       &trans        &msc SCRL_DOWN  &mkp LCLK  &trans        &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
