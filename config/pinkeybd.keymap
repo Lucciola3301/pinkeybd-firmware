@@ -49,7 +49,7 @@
 &kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)  &kp PAUSE_BREAK  &kp LC(Y)  &kp LC(U)       &kp LC(I)      &kp LC(O)       &kp LC(P)
 &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)  &kp SCROLLLOCK   &kp LC(H)  &kp LC(J)       &kp LC(K)      &kp LC(L)       &kp MINUS
 &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &kp TAB          &kp LC(N)  &kp LC(M)       &kp LC(COMMA)  &kp LC(PERIOD)  &kp SQT
-&mo 3      &none      &kp SPACE  &kp LALT   &kp PSCRN  &kp RSHIFT       &kp ENTER  &lt 4 NUMBER_0  &kp RCTRL
+&mo 3      &none      &kp SPACE  &kp LALT   &kp PSCRN  &kp RSHIFT       &kp ENTER  &lt 4 NUMBER_0  &kp TILDE
             >;
         };
 
