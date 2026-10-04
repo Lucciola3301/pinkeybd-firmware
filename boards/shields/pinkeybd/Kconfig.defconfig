@@ -6,6 +6,9 @@ if SHIELD_PINKEYBD_RIGHT
     config ZMK_SPLIT_ROLE_CENTRAL
         default y
 
+    config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+        default 1
+
     config INPUT
         bool
         default y
@@ -22,11 +25,6 @@ if SHIELD_PINKEYBD_RIGHT
         bool
         default y
 
-endif
-
-if SHIELD_PINKEYBD_LEFT
-    config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
-        default 1
 endif
 
 if SHIELD_PINKEYBD_LEFT || SHIELD_PINKEYBD_RIGHT
