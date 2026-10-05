@@ -55,12 +55,12 @@
 
     /*
      * Prevent typing vibration from immediately activating the mouse layer.
-     * Trackball movement can activate Layer 6 only after 200 ms without a key press.
+     * Trackball movement can activate Layer 6 only after 500 ms without a key press.
      */
     pinkeybd_auto_mouse_layer: pinkeybd_auto_mouse_layer {
         compatible = "zmk,input-processor-temp-layer";
         #input-processor-cells = <2>;
-        require-prior-idle-ms = <200>;
+        require-prior-idle-ms = <500>;
     };
 
     trackball_listener {
