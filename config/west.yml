@@ -8,6 +8,8 @@ manifest:
       url-base: https://github.com/zephyrproject-rtos
     - name: ktkhshi
       url-base: https://github.com/ktkhshi
+    - name: ryo-aoki-pc
+      url-base: https://github.com/ryo-aoki-pc
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -38,7 +40,7 @@ manifest:
           - edtt
           - trusted-firmware-m
     - name: nanopb
-      revision: 8c60555d6277a0360c876bd85d491fc4fb0cd74a
+      revision: 8c60555d6277a036c876bd85d491fc4fb0cd74a
       path: modules/lib/nanopb
       remote: zmkfirmware
     - name: zmk-studio-messages
@@ -48,5 +50,8 @@ manifest:
     - name: zmk-pmw3610-driver
       remote: ktkhshi
       revision: main
+    - name: zmk-input-processor-aml-threshold
+      remote: ryo-aoki-pc
+      revision: 98f317118e81c6fe9df5e88fc5acc554ecbc9af1
   self:
     west-commands: scripts/west-commands.yml
