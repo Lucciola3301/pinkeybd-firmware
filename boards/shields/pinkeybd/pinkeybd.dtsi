@@ -52,11 +52,28 @@
         sensors = <&left_encoder>;
         triggers-per-rotation = <12>;
     };
-};
 
-/ {
+    /*
+     * Auto-mouse activation guard:
+     * - keep full pointer precision (CPI divisor = 1)
+     * - require 500 ms of keyboard idle
+     * - activate Layer 6 only after net trackball movement reaches 4 counts
+     *   (back-and-forth vibration cancels out)
+     */
+    aml_threshold: aml_threshold {
+        compatible = "zmk,input-processor-aml-threshold";
+        #input-processor-cells = <2>;
+        temp-layer = <&zip_temp_layer>;
+        threshold = <4>;
+    };
+
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
+        input-processors = <&aml_threshold 6 800>;
     };
+};
+
+&zip_temp_layer {
+    require-prior-idle-ms = <500>;
 };
